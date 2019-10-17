@@ -1,0 +1,23 @@
+name: Python test
+
+on: push
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        python: ['3.6','3.7']
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    name: Python ${{ matrix.python }} test ( ${{ matrix.os }} )
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup python
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python }}
+          architecture: x64
+      - name: Run test
+        run: pytest python_test.py
