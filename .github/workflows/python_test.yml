@@ -20,4 +20,4 @@ jobs:
           python-version: ${{ matrix.python }}
           architecture: x64
       - name: Run test
-        run: pytest python_test.py
+        run: python python_test.py
