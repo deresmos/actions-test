@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@1.0.0
       - uses: micnncim/action-label-syncer@v0.3.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           GITHUB_REPOSITORY: deresmos/mpv-conf
         with:
           manifest: .github/labels.yml
