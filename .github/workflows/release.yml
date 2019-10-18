@@ -1,0 +1,13 @@
+name: Release Test
+
+on:
+  release:
+    types: [created, published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Release
+      run: echo "Release!!"
