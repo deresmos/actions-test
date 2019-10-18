@@ -2,8 +2,8 @@ name: Release Draft
 
 on:
   push:
-    tags:
-      - v*.*.*
+    branches:
+      - feature/*
 
 jobs:
   draft_release:
