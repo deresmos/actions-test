@@ -3,7 +3,7 @@ name: Release Draft
 on:
   push:
     branches:
-      - feature/*
+      - master
 
 jobs:
   draft_release:
