@@ -5,6 +5,6 @@ jobs:
   wip:
     runs-on: ubuntu-latest
     steps:
-      - uses: wip/action@v1.0.0
+      - uses: deresmos/wip-action@feature/wip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
