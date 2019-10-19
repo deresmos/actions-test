@@ -1,0 +1,9 @@
+name: "WIP"
+on: [pull_request]
+
+jobs:
+  wip:
+  name: "Set status"
+  runs-on: ubuntu-latest
+  steps:
+    - uses: wip/action@v1.0.0
