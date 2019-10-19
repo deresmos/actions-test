@@ -1,5 +1,8 @@
 name: Sync labels
-on: [push]
+on:
+  push:
+    - '.github/labels.yml'
+
 jobs:
   build:
     runs-on: ubuntu-latest
