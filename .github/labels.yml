@@ -30,21 +30,21 @@
 # Communication
 - name: help wanted
   description:
-  color: 9ff4ae
+  color: ffccdd
 - name: question
   description:
-  color: 9ff4ae
+  color: ffccdd
 - name: documentation
   description:
-  color: 9ff4ae
+  color: ffccdd
 - name: discussion
   description:
-  color: 9ff4ae
+  color: ffccdd
 
 # etc
 - name: release
-  description: Release branch
-  color: 9ff4ae
+  description:
+  color: dff4de
 
 # invalid
 - name: duplicate
