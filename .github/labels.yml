@@ -1,15 +1,56 @@
-- color: d73a4a
-  description: Something isn't working
-  name: bug
-- color: 0075ca
-  description: Improvements or additions to documentation
-  name: documentation
-- color: cfd3d7
-  description: This issue or pull request already exists
-  name: duplicate
-- color: cfd3d7
-  description: test
-  name: test
-- color: cfd3d7
-  description: test2
-  name: test2
+# OK
+- name: ready-for-merge
+  description:
+  color: 4cf43d
+
+# WARNING
+- name: experimental
+  description:
+  color: fced7e
+- name: WIP
+  description:
+  color: fced7e
+
+# ALERT
+- name: bug
+  description:
+  color: d73a4a
+
+# blue
+- name: release
+  description:
+  color: a2eeef
+- name: fix
+  description:
+  color: a2eeef
+- name: enhancement
+  description:
+  color: a2eeef
+- name: refactor
+  description:
+  color: a2eeef
+
+# Communication
+- name: help wanted
+  description:
+  color: d876e3
+- name: question
+  description:
+  color: d876e3
+- name: documentation
+  description:
+  color: d876e3
+- name: discussion
+  description:
+  color: d876e3
+
+# etc
+- name: duplicate
+  description:
+  color: cfd3d7
+- name: wontfix
+  description:
+  color: cfd3d7
+- name: invalid
+  description:
+  color: cfd3d7
