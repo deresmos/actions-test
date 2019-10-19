@@ -45,6 +45,9 @@
 - name: release
   description:
   color: dff4de
+- name: workflow
+  description:
+  color: dff4de
 
 # invalid
 - name: duplicate
