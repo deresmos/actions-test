@@ -11,6 +11,7 @@ on:
 jobs:
   wip:
     runs-on: ubuntu-latest
+    name: check wip
     steps:
       - uses: deresmos/wip-action@feature/wip
         env:
