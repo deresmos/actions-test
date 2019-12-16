@@ -56,6 +56,10 @@
 - name: wontfix
   description:
   color: dddddd
+
+# test
 - name: invalid
   description:
-  color: dddddd
+  color: ffccdd
+- name: invalid2
+  color: ffccdd
