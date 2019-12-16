@@ -5,15 +5,17 @@ on:
       - master
     paths:
       - '.github/labels.yml'
+      - '.github/workflows/label_sync.yml'
 
 jobs:
-  build:
+  labeler:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@1.0.0
-      - uses: micnncim/action-label-syncer@v0.3.1
+      - uses: actions/checkout@v1
+      - uses: crazy-max/ghaction-github-labeler@v1.1.1
+        with:
+          yaml_file: .github/labels.yml
+          skip_delete: true
+          dry_run: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-        with:
-          manifest: .github/labels.yml
