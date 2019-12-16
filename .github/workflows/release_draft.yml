@@ -2,12 +2,12 @@ name: Release Draft
 
 on:
   push:
-    tags:
-      - v*.*.*
+    branches:
+      - master
 
 jobs:
   draft_release:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: toolmantim/release-drafter@v5.2.0
         env:
