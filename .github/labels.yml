@@ -1,65 +1,45 @@
 # INFO
 - name: ready-for-merge
-  description:
   color: 00ff00
 
 # WARNING
 - name: experimental
-  description:
   color: ffff00
 - name: WIP
-  description:
   color: ffff00
 
 # ALERT
 - name: bug
-  description:
   color: dd0000
 
 # PROGRAMING
 - name: fix
-  description:
   color: a2eeef
 - name: enhancement
-  description:
   color: a2eeef
 - name: refactor
-  description:
   color: a2eeef
 
 # Communication
 - name: help wanted
-  description:
   color: ffccdd
 - name: question
-  description:
   color: ffccdd
 - name: documentation
-  description:
   color: ffccdd
 - name: discussion
-  description:
   color: ffccdd
 
 # etc
 - name: release
-  description:
   color: dff4de
 - name: workflow
-  description:
   color: dff4de
 
 # invalid
 - name: duplicate
-  description:
   color: dddddd
 - name: wontfix
-  description:
   color: dddddd
-
-# test
 - name: invalid
-  description:
-  color: ffccdd
-- name: invalid2
   color: ffccdd
