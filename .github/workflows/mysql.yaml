@@ -1,6 +1,9 @@
 name: mysql test
 
-on: push
+on:
+  push:
+    paths:
+      - .github/workflows/mysql.yaml
 
 jobs:
   build:
