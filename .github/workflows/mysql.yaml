@@ -1,0 +1,29 @@
+name: mysql test
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # services:
+    #   mysql:
+    #     image: mysql:5.7
+    #     env:
+    #       TZ: Asia/Tokyo
+    #       MYSQL_ROOT_PASSWORD: root
+    #       MYSQL_USER: docker
+    #       MYSQL_PASSWORD: docker
+    #       MYSQL_DATABASE: dashboard
+    #     ports:
+    #       - 3306:3306
+    #
+    steps:
+      - name: Setting Up DB
+        run: sudo systemctl start mysql
+
+      - name: Setting Up DB
+        run: mysql -uroot -h 127.0.0.1 -proot -e 'CREATE DATABASE IF NOT EXISTS dashboard;'
+
+      - name: Setting Up DB
+        run: mysql -uroot -h 127.0.0.1 -proot dashboard -e 'use dashboard;'
