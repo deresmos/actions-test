@@ -18,3 +18,5 @@ jobs:
         run: pip install PyGithub
       - name: Run test
         run: python python_test.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
