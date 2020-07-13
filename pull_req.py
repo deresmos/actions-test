@@ -19,7 +19,7 @@ class GithubManager:
         if not match:
             return -1
 
-        return match[1]
+        return int(match[1])
 
     def get_pull(self):
         pr_number = self.get_pull_request_number()
