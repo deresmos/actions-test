@@ -24,3 +24,5 @@ jobs:
 
       - name: Run test
         run: cd go && go run ./main.go
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: "../pull_req.py"
