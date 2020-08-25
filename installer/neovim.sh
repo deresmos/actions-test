@@ -8,5 +8,9 @@ fi
 
 git clone https://github.com/neovim/neovim ~/softs/neovim
 cd ~/softs/neovim
-make CMAKE_BUILD_TYPE=Release
-sudo make install
+make CMAKE_BUILD_TYPE=Release && sudo make install
+
+if type nvim > /dev/null; then
+  echo ">>> neovim installed!"
+  exit 0
+fi
