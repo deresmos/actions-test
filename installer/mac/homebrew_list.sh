@@ -3,6 +3,9 @@ if type brew > /dev/null; then
   brew install \
     wget \
     imagemagick \
+    # neovim
+    pkg-config \
+    automake \
     cmake
 
   exit 0
