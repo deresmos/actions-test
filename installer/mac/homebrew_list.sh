@@ -4,5 +4,6 @@ if type brew > /dev/null; then
     wget \
     imagemagick \
     cmake
+
   exit 0
 fi
