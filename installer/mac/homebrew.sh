@@ -10,6 +10,5 @@ fi
 
 if type homebrew > /dev/null; then
   echo ">>> homebrew installed!"
-  brew install cmake
   exit 0
 fi
