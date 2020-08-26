@@ -3,6 +3,10 @@ if type brew > /dev/null; then
   brew install \
     wget \
     imagemagick \
+    terminal-notifier \
+    pt \
+    ag \
+    direnv \
     # neovim
     pkg-config \
     automake \
