@@ -18,3 +18,5 @@ nodenv global 14.8.0
 # ricty
 # nerdfonts
 # deres.vimrc
+
+# curl https://sdk.cloud.google.com | bash
