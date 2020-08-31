@@ -20,3 +20,4 @@ nodenv global 14.8.0
 # deres.vimrc
 
 # curl https://sdk.cloud.google.com | bash
+# pip install xlsx2csv

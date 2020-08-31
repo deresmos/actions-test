@@ -7,6 +7,11 @@ if type brew > /dev/null; then
     pt \
     ag \
     direnv \
+    odt2txt \
+    atool \
+    pandoc \
+    exiftool \
+    poppler \
     # neovim
     pkg-config \
     automake \
