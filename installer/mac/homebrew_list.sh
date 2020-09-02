@@ -12,6 +12,8 @@ if type brew > /dev/null; then
     pandoc \
     exiftool \
     poppler \
+    graphviz \
+    plantuml \
     # neovim
     pkg-config \
     automake \
