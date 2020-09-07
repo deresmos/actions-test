@@ -1,0 +1,26 @@
+name: Go test
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+
+      - name: Set up Go 1.12
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.12
+
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+        with:
+          version: '290.0.1'
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+
+      - run: which gcloud
+      - run: which gsutil
