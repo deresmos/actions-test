@@ -26,8 +26,8 @@ jobs:
         run: pip install poetry
       - uses: actions/cache@v2
         with:
-          path: ~/.cache/pypoetry
-          key: ${{ matrix.os }}-poetry-test-${{ matrix.python }}-${{ hashFiles('./poetry.lock') }}
+          path: ~/.venv
+          key: ${{ matrix.os }}-poetry-venv-${{ matrix.python }}-${{ hashFiles('./poetry.lock') }}
       - name: poetry config list
         run: poetry config --list
       - name: install package
