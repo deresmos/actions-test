@@ -10,6 +10,7 @@ jobs:
     strategy:
       matrix:
         python: ['3.6']
+        name: ['test-name']
         os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
@@ -39,3 +40,6 @@ jobs:
 
       - name: install package
         run: poetry install
+
+      - name: test ${{ matrix.name }}
+        run: echo 'test da "aa ${{ matrix.name }}"'
