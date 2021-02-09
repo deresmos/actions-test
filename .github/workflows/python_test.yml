@@ -24,9 +24,9 @@ jobs:
           architecture: x64
       - name: Install poetry
         run: pip install poetry
-      # - uses: actions/cache@v2
-      #   with:
-      #     path: ~/.cache/poetry
-      #     key: ${{ matrix.os }}-poetry-${{ matrix.python }}-${{ hashFiles('**/poetry.lock') }}
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pypoetry
+          key: ${{ matrix.os }}-poetry-${{ matrix.python }}-${{ hashFiles('./poetry.lock') }}
       - name: poetry config list
         run: poetry config --list
