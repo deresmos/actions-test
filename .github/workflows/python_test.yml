@@ -27,7 +27,7 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: ~/.cache/pypoetry
-          key: ${{ matrix.os }}-poetry-${{ matrix.python }}-${{ hashFiles('./poetry.lock') }}
+          key: ${{ matrix.os }}-poetry-test-${{ matrix.python }}-${{ hashFiles('./poetry.lock') }}
       - name: poetry config list
         run: poetry config --list
 
