@@ -22,6 +22,12 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
           architecture: x64
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-poetry@v1
+          restore-keys: |
+            ${{ runner.os }}-pip-poetry
       - name: Install poetry
         run: pip install poetry
       - uses: actions/cache@v2
