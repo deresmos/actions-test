@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         python: ['3.6']
-        name: ['test-name']
+        name: ['echo']
         os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
@@ -43,3 +43,6 @@ jobs:
 
       - name: test ${{ matrix.name }}
         run: echo 'test da "aa ${{ matrix.name }}"'
+
+      - name: test command
+        run: ${{ matrix.name }} "test"
