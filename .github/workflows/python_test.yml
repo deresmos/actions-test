@@ -2,15 +2,15 @@ name: Python test
 
 on:
   push:
-    paths:
-      - ./**/*.py
+    # paths:
+    #   - ./**/*.py
 
 jobs:
   build:
     strategy:
       matrix:
-        python: ['3.6','3.7']
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        python: ['3.6']
+        os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
 
@@ -22,5 +22,11 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
           architecture: x64
-      - name: Run test
-        run: python python_test.py
+      - name: Install poetry
+        run: pip install poetry
+      # - uses: actions/cache@v2
+      #   with:
+      #     path: ~/.cache/poetry
+      #     key: ${{ matrix.os }}-poetry-${{ matrix.python }}-${{ hashFiles('**/poetry.lock') }}
+      - name: poetry config list
+        run: poetry config --list
