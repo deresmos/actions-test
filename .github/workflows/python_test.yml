@@ -8,10 +8,10 @@ on:
 jobs:
   build:
     strategy:
-      matrix:
-        python: ['3.6']
-        name: ['echo']
-        os: [ubuntu-latest]
+      include:
+        - python: '3.6'
+          name: 'echo'
+          os: ubuntu-latest
 
     runs-on: ${{ matrix.os }}
 
