@@ -30,6 +30,5 @@ jobs:
           key: ${{ matrix.os }}-poetry-test-${{ matrix.python }}-${{ hashFiles('./poetry.lock') }}
       - name: poetry config list
         run: poetry config --list
-
       - name: install package
         run: poetry install
