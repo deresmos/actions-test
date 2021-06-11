@@ -18,12 +18,5 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: check
-        run: ls -l
-      - name: GO
-        run: firebase
       - name: Run test
         run: npm ci
-      - name: GO
-        run: npx firebase
-
