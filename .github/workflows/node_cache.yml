@@ -20,6 +20,9 @@ jobs:
             ${{ runner.os }}-node2-
       - name: list
         run: ls -l
+      - name: ok
+        run: npx firebase
       - name: Run test
+        if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
