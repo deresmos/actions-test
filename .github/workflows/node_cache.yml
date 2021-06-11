@@ -19,4 +19,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node1-
       - name: Run test
+        run: npx firebase
+      - name: Run test
+        run: firebase
+      - name: Run test
         run: npm ci
