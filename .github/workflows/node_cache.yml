@@ -18,7 +18,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Run common
+      - name: check
         run: ls -l
       - name: Run test
         run: make test
