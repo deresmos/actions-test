@@ -19,6 +19,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Run common
-        run: make comon
+        run: ls -l
       - name: Run test
         run: make test
