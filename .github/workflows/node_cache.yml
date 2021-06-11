@@ -4,6 +4,9 @@ on:
   push:
 jobs:
   test:
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Cache node modules
         uses: actions/cache@v2
         with:
