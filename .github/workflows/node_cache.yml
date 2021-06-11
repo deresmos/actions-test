@@ -16,7 +16,7 @@ jobs:
         id: node_cache
         with:
           path: ./node_modules
-          key: ${{ runner.os }}-node2-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node2-1${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node2-
       - name: list
