@@ -14,10 +14,10 @@ jobs:
       - name: Cache node modules
         uses: actions/cache@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node1-${{ hashFiles('**/package-lock.json') }}
+          path: ./node_modules
+          key: ${{ runner.os }}-node2-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node1-
+            ${{ runner.os }}-node2-
       - name: list
         run: ls -l
       - name: Run test
