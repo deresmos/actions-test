@@ -20,6 +20,8 @@ jobs:
             ${{ runner.os }}-node-
       - name: check
         run: ls -l
+      - name: GO
+        run: firebase
       - name: Run test
         run: npm ci
       - name: GO
