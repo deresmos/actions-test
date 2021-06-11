@@ -1,3 +1,6 @@
+common:
+	@echo 'common'
+
 test: node_modules
 	@echo 'test!'
 	
