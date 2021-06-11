@@ -14,11 +14,13 @@ jobs:
       - name: Cache node modules
         uses: actions/cache@v2
         with:
-          path: ./node_modules
+          path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name: check
         run: ls -l
       - name: Run test
-        run: make test
+        run: npm ci
+      - name: GO
+        run: npx firebase
