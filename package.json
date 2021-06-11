@@ -1,0 +1,15 @@
+{
+  "name": "zstaff-server3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^9.12.1"
+  },
+  "scripts": {
+    "start_emulators": "cd firebase_emulator; firebase emulators:start",
+    "test_on_emulator": "cd firebase_emulator; firebase emulators:exec 'cd ../; make test'"
+  }
+}
