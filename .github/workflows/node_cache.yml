@@ -24,3 +24,4 @@ jobs:
         run: npm ci
       - name: GO
         run: npx firebase
+
